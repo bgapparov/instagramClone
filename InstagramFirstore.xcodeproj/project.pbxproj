@@ -15,6 +15,12 @@
 		92770CD2256E163C0095D3CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92770CD0256E163C0095D3CA /* LaunchScreen.storyboard */; };
 		92770CDD256E163C0095D3CA /* InstagramFirstoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770CDC256E163C0095D3CA /* InstagramFirstoreTests.swift */; };
 		92770CE8256E163C0095D3CA /* InstagramFirstoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770CE7256E163C0095D3CA /* InstagramFirstoreUITests.swift */; };
+		92770D04256E17A30095D3CA /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D03256E17A30095D3CA /* MainTabController.swift */; };
+		92770D09256E1DBC0095D3CA /* FeedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D08256E1DBC0095D3CA /* FeedController.swift */; };
+		92770D0E256E1DCA0095D3CA /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D0D256E1DCA0095D3CA /* SearchController.swift */; };
+		92770D13256E1DE60095D3CA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D12256E1DE60095D3CA /* ImageSelectorController.swift */; };
+		92770D18256E1DFF0095D3CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D17256E1DFF0095D3CA /* NotificationController.swift */; };
+		92770D1D256E1E0F0095D3CA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D1C256E1E0F0095D3CA /* ProfileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		92770CE3256E163C0095D3CA /* InstagramFirstoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramFirstoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92770CE7256E163C0095D3CA /* InstagramFirstoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramFirstoreUITests.swift; sourceTree = "<group>"; };
 		92770CE9256E163C0095D3CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92770D03256E17A30095D3CA /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		92770D08256E1DBC0095D3CA /* FeedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedController.swift; sourceTree = "<group>"; };
+		92770D0D256E1DCA0095D3CA /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
+		92770D12256E1DE60095D3CA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
+		92770D17256E1DFF0095D3CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		92770D1C256E1E0F0095D3CA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +163,12 @@
 		92770CFC256E16550095D3CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92770D03256E17A30095D3CA /* MainTabController.swift */,
+				92770D08256E1DBC0095D3CA /* FeedController.swift */,
+				92770D0D256E1DCA0095D3CA /* SearchController.swift */,
+				92770D12256E1DE60095D3CA /* ImageSelectorController.swift */,
+				92770D17256E1DFF0095D3CA /* NotificationController.swift */,
+				92770D1C256E1E0F0095D3CA /* ProfileController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,7 +325,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				92770CCA256E163A0095D3CA /* ViewController.swift in Sources */,
+				92770D13256E1DE60095D3CA /* ImageSelectorController.swift in Sources */,
+				92770D18256E1DFF0095D3CA /* NotificationController.swift in Sources */,
+				92770D0E256E1DCA0095D3CA /* SearchController.swift in Sources */,
 				92770CC6256E163A0095D3CA /* AppDelegate.swift in Sources */,
+				92770D1D256E1E0F0095D3CA /* ProfileController.swift in Sources */,
+				92770D09256E1DBC0095D3CA /* FeedController.swift in Sources */,
+				92770D04256E17A30095D3CA /* MainTabController.swift in Sources */,
 				92770CC8256E163A0095D3CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
