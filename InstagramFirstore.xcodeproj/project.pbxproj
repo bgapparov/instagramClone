@@ -21,6 +21,8 @@
 		92770D13256E1DE60095D3CA /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D12256E1DE60095D3CA /* ImageSelectorController.swift */; };
 		92770D18256E1DFF0095D3CA /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D17256E1DFF0095D3CA /* NotificationController.swift */; };
 		92770D1D256E1E0F0095D3CA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D1C256E1E0F0095D3CA /* ProfileController.swift */; };
+		92770D22257045D00095D3CA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D21257045D00095D3CA /* FeedCell.swift */; };
+		92770D2725704A620095D3CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D2625704A620095D3CA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		92770D12256E1DE60095D3CA /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		92770D17256E1DFF0095D3CA /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		92770D1C256E1E0F0095D3CA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		92770D21257045D00095D3CA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		92770D2625704A620095D3CA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		92770CF8256E16430095D3CA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				92770D2625704A620095D3CA /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -183,6 +188,7 @@
 		92770CFE256E165A0095D3CA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				92770D21257045D00095D3CA /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -325,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92770CCA256E163A0095D3CA /* ViewController.swift in Sources */,
+				92770D22257045D00095D3CA /* FeedCell.swift in Sources */,
 				92770D13256E1DE60095D3CA /* ImageSelectorController.swift in Sources */,
 				92770D18256E1DFF0095D3CA /* NotificationController.swift in Sources */,
 				92770D0E256E1DCA0095D3CA /* SearchController.swift in Sources */,
@@ -332,6 +339,7 @@
 				92770D1D256E1E0F0095D3CA /* ProfileController.swift in Sources */,
 				92770D09256E1DBC0095D3CA /* FeedController.swift in Sources */,
 				92770D04256E17A30095D3CA /* MainTabController.swift in Sources */,
+				92770D2725704A620095D3CA /* Extensions.swift in Sources */,
 				92770CC8256E163A0095D3CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
