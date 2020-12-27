@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92293AC12596A8A20085304F /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92293AC02596A8A20085304F /* LoginController.swift */; };
+		92293AC62596A8E90085304F /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92293AC52596A8E90085304F /* RegistrationController.swift */; };
 		92770CC6256E163A0095D3CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770CC5256E163A0095D3CA /* AppDelegate.swift */; };
 		92770CC8256E163A0095D3CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770CC7256E163A0095D3CA /* SceneDelegate.swift */; };
 		92770CCA256E163A0095D3CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770CC9256E163A0095D3CA /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		92293AC02596A8A20085304F /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		92293AC52596A8E90085304F /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
 		92770CC2256E163A0095D3CA /* InstagramFirstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFirstore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92770CC5256E163A0095D3CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92770CC7256E163A0095D3CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92293ABF2596A88B0085304F /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				92293AC02596A8A20085304F /* LoginController.swift */,
+				92293AC52596A8E90085304F /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		92770CB9256E163A0095D3CA = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		92770CFC256E16550095D3CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92293ABF2596A88B0085304F /* Authentication */,
 				92770D03256E17A30095D3CA /* MainTabController.swift */,
 				92770D08256E1DBC0095D3CA /* FeedController.swift */,
 				92770D0D256E1DCA0095D3CA /* SearchController.swift */,
@@ -331,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92770CCA256E163A0095D3CA /* ViewController.swift in Sources */,
+				92293AC12596A8A20085304F /* LoginController.swift in Sources */,
 				92770D22257045D00095D3CA /* FeedCell.swift in Sources */,
 				92770D13256E1DE60095D3CA /* ImageSelectorController.swift in Sources */,
 				92770D18256E1DFF0095D3CA /* NotificationController.swift in Sources */,
@@ -341,6 +356,7 @@
 				92770D04256E17A30095D3CA /* MainTabController.swift in Sources */,
 				92770D2725704A620095D3CA /* Extensions.swift in Sources */,
 				92770CC8256E163A0095D3CA /* SceneDelegate.swift in Sources */,
+				92293AC62596A8E90085304F /* RegistrationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

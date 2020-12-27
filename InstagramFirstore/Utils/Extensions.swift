@@ -2,7 +2,7 @@
 //  Extensions.swift
 //  InstagramFirestoreTutorial
 //
-//  Created by Stephen Dowless on 6/19/20.
+//  Created by Baiaman Gapparov on 11/19/20.
 //  Copyright © 2020 Stephan Dowless. All rights reserved.
 //
 
@@ -29,7 +29,7 @@ extension UIViewController {
 //            UIViewController.hud.dismiss()
 //        }
     }
-    
+
     func showMessage(withTitle title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
