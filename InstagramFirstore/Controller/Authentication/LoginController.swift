@@ -18,28 +18,13 @@ class LoginController: UIViewController {
     }()
     
     private let emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.borderStyle = .none
-        textField.textColor = .white
-        textField.keyboardAppearance = .dark
+        let textField = CustomTextField(placeHolder: "Email")
         textField.keyboardType = .emailAddress
-        textField.backgroundColor = UIColor(white: 1, alpha: 0.1)
-        textField.setHeight(50)
-        textField.attributedPlaceholder = NSAttributedString(string: "Email",
-                                                             attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.7)])
         return textField
     }()
     
     private let passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.borderStyle = .none
-        textField.textColor = .white
-        textField.keyboardAppearance = .dark
-        textField.keyboardType = .emailAddress
-        textField.backgroundColor = UIColor(white: 1, alpha: 0.1)
-        textField.setHeight(50)
-        textField.attributedPlaceholder = NSAttributedString(string: "Password",
-                                                             attributes: [.foregroundColor: UIColor(white: 1, alpha: 0.7)])
+        let textField = CustomTextField(placeHolder: "Password")
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -57,29 +42,14 @@ class LoginController: UIViewController {
     
     private let forgetPasswordButton: UIButton = {
         let button = UIButton(type: .system)
-        
-        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.systemFont(ofSize: 16)]
-        let attributedTitle = NSMutableAttributedString(string: "Forgot your password? ", attributes: atts)
-        
-        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.boldSystemFont(ofSize: 16)]
-        attributedTitle.append(NSAttributedString(string: "Get help signing in.", attributes: boldAtts))
-        
-        button.setAttributedTitle(attributedTitle, for: .normal)
-        
+        button.attributedTitle(firstPart: "Forgot your password?", secondPart: "Get help signing in.")
         return button
     }()
     
     private let dontHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
-        
-        let atts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.systemFont(ofSize: 16)]
-        let attributedTitle = NSMutableAttributedString(string: "Don't have an account ", attributes: atts)
-        
-        let boldAtts: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor(white: 1, alpha: 0.7), .font: UIFont.boldSystemFont(ofSize: 16)]
-        attributedTitle.append(NSAttributedString(string: "Sign up", attributes: boldAtts))
-        
-        button.setAttributedTitle(attributedTitle, for: .normal)
-        
+        button.attributedTitle(firstPart: "Don't have an account", secondPart: "Sign up")
+        button.addTarget(self, action: #selector(handleShowSignUp), for: .touchUpInside)
         return button
     }()
     
@@ -89,10 +59,17 @@ class LoginController: UIViewController {
         configureUI()
     }
     
+    // MARK: - Action
+    
+    @objc func handleShowSignUp() {
+        let registrationVC = RegistartionController()
+        navigationController?.pushViewController(registrationVC, animated: true)
+    }
+    
     // MARK: - Helpers
     
     func configureUI() {
-        view.backgroundColor = .white
+        configureGradientLayer()
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         
