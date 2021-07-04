@@ -26,6 +26,7 @@
 		92770D1D256E1E0F0095D3CA /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D1C256E1E0F0095D3CA /* ProfileController.swift */; };
 		92770D22257045D00095D3CA /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D21257045D00095D3CA /* FeedCell.swift */; };
 		92770D2725704A620095D3CA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92770D2625704A620095D3CA /* Extensions.swift */; };
+		92B006212691195E00E46739 /* AuthenticateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B006202691195E00E46739 /* AuthenticateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		92770D1C256E1E0F0095D3CA /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		92770D21257045D00095D3CA /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		92770D2625704A620095D3CA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		92B006202691195E00E46739 /* AuthenticateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 		92770CFD256E16570095D3CA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				92B006202691195E00E46739 /* AuthenticateViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92293ACB25985D6C0085304F /* CustomTextField.swift in Sources */,
+				92B006212691195E00E46739 /* AuthenticateViewModel.swift in Sources */,
 				92770CCA256E163A0095D3CA /* ViewController.swift in Sources */,
 				92293AC12596A8A20085304F /* LoginController.swift in Sources */,
 				92770D22257045D00095D3CA /* FeedCell.swift in Sources */,
